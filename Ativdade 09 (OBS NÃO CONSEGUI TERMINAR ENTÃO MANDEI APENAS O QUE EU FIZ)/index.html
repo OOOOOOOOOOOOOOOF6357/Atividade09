@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 09</title>
+    <link rel="stylesheet"
+        href="style.css">
+</head>
+<body><div id="id1">
+        Multiplicação!<br><br>
+        Primeiro Número:<br>
+        <input id="num1"><br>
+        Segundo Número:<br>
+        <input id="num2"><br><br>
+        <button onclick ="OK()">OK</button><br><br>
+        <h2>O resultado é</h2> <h1></h1><br>
+    </div>
+
+    <div id="id2"><br><br>
+        Potência!<br><Br>
+    Primeiro Número:<br>
+    <input id="num11"><br>
+    Segundo Número:<br>
+    <input id="num22"><br><br>
+    <button onclick ="OK2()">OK</button><br><br>
+</div>
+
+
+    <script>
+        var n1 = document.querySelector('#num1')
+        var n2 = document.querySelector('#num2')
+        var n11 = document.querySelector('#num11')
+        var n22 = document.querySelector('#num22')
+        var resultado = document.querySelector('h1')
+
+        function OK() {
+            resultado.innerHTML = parseInt(n1.value) * parseInt (n2.value)
+        }
+
+        function OK2() {
+            resultado.innerHTML = Math.pow(n11.value, n22.value)
+        }
+    </script>
+</body>
+</html>
